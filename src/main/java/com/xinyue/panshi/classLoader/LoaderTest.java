@@ -7,6 +7,7 @@ package com.xinyue.panshi.classLoader;
  */
 public class LoaderTest {
     public static void main(String[] args) {
+
         try {
             /**
              * AppClassLoader: 它负责将系统类路径java -classpath或-Djava.class.path变量所指的目录下的类库加载到内存中
