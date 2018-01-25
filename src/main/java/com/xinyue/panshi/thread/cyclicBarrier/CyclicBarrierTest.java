@@ -42,7 +42,7 @@ public class CyclicBarrierTest {
             System.out.println(serveName + "正在进行备份操作");
             try {
                 System.out.println(serveName + "服务停止完毕");
-                // 必须等待其他机器都停止了，才能执行新的脚本
+                // 必须等待其他机器都停止了，才能执行新的脚本，比如一个用户系统的微服务2台机器，想要执行脚本
                 cyclicBarrier.await();
             } catch (InterruptedException e) {
                 e.printStackTrace();

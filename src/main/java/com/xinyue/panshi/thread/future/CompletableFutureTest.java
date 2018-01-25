@@ -33,7 +33,9 @@ public class CompletableFutureTest {
                 return  list;
             }
         });
-
+        /**
+         * 谷歌
+         */
         ListeningExecutorService executorService = MoreExecutors.listeningDecorator(new ThreadPoolExecutor(
                 2, 8, 0, TimeUnit.MILLISECONDS,
                 new LinkedBlockingQueue<Runnable>(),
