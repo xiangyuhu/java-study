@@ -19,6 +19,7 @@ public class LoaderTest {
              * 开发者可以直接使用标准扩展类加载器。
              */
             System.out.println(ClassLoader.getSystemClassLoader().getParent());
+
             /**
              * null
              * Bootstrap 加载 比如java.lang.System 所以自己无法在实现一个System的类，因为它是由Bootstrap加载的根据双亲委派原则，
@@ -26,7 +27,6 @@ public class LoaderTest {
              * 启动（Bootstrap）类加载器
              */
             System.out.println(ClassLoader.getSystemClassLoader().getParent().getParent());
-
 
             //查看当前系统类路径中包含的路径条目
             System.out.println(System.getProperty("java.class.path"));
