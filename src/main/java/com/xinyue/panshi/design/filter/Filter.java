@@ -7,7 +7,7 @@ import java.io.IOException;
  * @time 2018/1/29
  * @desc 典型的servlet规范过滤器配置
  */
-public interface Filter {
+public  interface Filter {
     void init();
     void doFilter(FilterChain filterChain);
     void destroy();

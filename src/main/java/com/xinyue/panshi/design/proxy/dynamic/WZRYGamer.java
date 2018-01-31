@@ -8,6 +8,13 @@ import com.xinyue.panshi.common.util.PrintUtil;
  * @desc
  */
 public class WZRYGamer implements Gamer{
+    public WZRYGamer() {
+
+    }
+
+    public WZRYGamer(String userName, String password) {
+
+    }
     @Override
     public void paly() {
         PrintUtil.printString("王者荣耀选手正在嗨");
